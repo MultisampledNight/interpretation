@@ -1,3 +1,5 @@
+#import "util/graphics.typ"
+
 #set page(
   numbering: "1 / 1",
 )
@@ -133,4 +135,10 @@ dort einzubetten,
 wo es hilft oder
 Textelemente erklären kann.
 
-#todo[Epochenübersicht in cetz oder fletcher neu machen]
+#pagebreak()
+
+= Anhang
+
+== Epochen der Literatur
+
+#graphics.literature-epochs
