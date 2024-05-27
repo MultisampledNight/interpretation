@@ -52,6 +52,8 @@
     label(diagram.width)
   }
 
+  // TODO: also add legend explaining backdrops of epochs
+
   let normalize(intervals) = {
     // is there only 1 interval?
     if type(intervals.at(0)) == int {
@@ -87,28 +89,48 @@
     let total-end = calc.max(..intervals.map(it => it.at(2)))
     let y-mid = (total-start + total-end) / 2
 
-    rect(
-      (column - 0.5 + column-spacing, total-start),
-      (column + 0.5 - column-spacing, total-end),
-      fill: fg.transparentize(32.5%),
-      stroke: none,
-    )
-    content(
-      (column, y-mid),
-      box(
-        width: cell-size.x * 1cm - 8pt,
-        align(
-          center,
-          text(
-            fill: bg,
-            size: 0.9em,
-            name,
+    for (start, kind, end) in intervals {
+      let backdrops = (
+        "solid": fg.transparentize(17.5%),
+        "maybe": gradient.linear(
+          fg.lighten(25%),
+          fg.lighten(45%),
+          angle: 45deg,
+        )
+        .sharp(2)
+        .repeat(3)
+      )
+      let upper-left = (column - 0.5 + column-spacing, start)
+      let lower-right = (column + 0.5 - column-spacing, end)
+      rect(
+        upper-left,
+        lower-right,
+        fill: backdrops.at(kind),
+        stroke: none,
+      )
+
+      if "solid" == kind {
+        let label = box(
+          width: cell-size.x * 1cm - 8pt,
+          align(
+            center,
+            text(
+              fill: bg,
+              size: 0.9em,
+              name,
+            ),
           ),
-        ),
-      ),
-    )
+        )
+        content(
+          (upper-left, 50%, lower-right),
+          label,
+        )
+      }
+    }
   }
 
+  // TODO: refactor syntax to make use of intervals always sharing starts and ends,
+  // just put them into 1 array instead of nesting
   epoch(1, (1715, 1789))[Aufklärung]
   epoch(2, (1760, 1780))[Sturm und Drang]
   epoch(3, (
