@@ -3,7 +3,13 @@
 #let bg = luma(100%)
 #let fg = luma(0%)
 
-#let literature-epochs = cetz.canvas({
+#let canvas(body) = {
+  set par(justify: false)
+  cetz.canvas(body)
+}
+
+
+#let literature-epochs = canvas({
   import cetz.draw: *
 
   let diagram = (width: 5)
@@ -120,7 +126,7 @@
   epoch(3, (1848, 1890))[Poetischer Realismus]
   epoch(4, (1880, 1900))[Natural-ismus]
   epoch(1, (1900, 1910))[
-    GnN
+    GzN
     #footnote[Gegenströmungen zum Naturalismus]
   ]
   epoch(2, (

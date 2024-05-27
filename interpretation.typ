@@ -1,5 +1,7 @@
 #import "util/graphics.typ"
 
+#let version = "0.1.0"
+
 #set page(
   numbering: "1 / 1",
 )
@@ -20,7 +22,8 @@
   right,
 )[
   #text(2em)[hilfe Interpretation wie] \
-  Von: MultisampledNight
+  Von MultisampledNight \
+  Version #version
 ]
 
 #let note(body) = block(
