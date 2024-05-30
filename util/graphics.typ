@@ -20,6 +20,17 @@
     y: -cell-size.y
   )
 
+  let backdrops = (
+    solid: fg.transparentize(7.5%),
+    maybe: gradient.linear(
+      fg.lighten(25%),
+      fg.lighten(45%),
+      angle: 45deg,
+    )
+    .sharp(2)
+    .repeat(3)
+  )
+
   let step = (major: 25, minor: 5)
   let legend-years = range(
     1700,
@@ -54,6 +65,33 @@
 
   // TODO: also add legend explaining backdrops of epochs
 
+  // this is like super cursed
+  // but on the other hand this way I don't need to worry about scaling
+  // and can easily draw squares
+  content(
+    (0.25, legend-years.last() + 10),
+    anchor: "north-west",
+    canvas({
+      let part(y, accent, label) = {
+        let y = y * 1.25
+        rect(
+          (0, y),
+          (rel: (1, 1)),
+          fill: accent,
+          stroke: none,
+        )
+        content(
+          (1, y + 0.5),
+          anchor: "west",
+          pad(0.5em, label),
+        )
+      }
+
+      part(1, backdrops.solid, [Sicher in der Zeit])
+      part(0, backdrops.maybe, [Kann man sich drüber streiten])
+    }),
+  )
+
   let normalize(intervals) = {
     // if there's only 2 items, assume it's solid
     if intervals.len() == 2 {
@@ -83,16 +121,6 @@
     let y-mid = (total-start + total-end) / 2
 
     for (start, kind, end) in individual(intervals) {
-      let backdrops = (
-        "solid": fg.transparentize(17.5%),
-        "maybe": gradient.linear(
-          fg.lighten(25%),
-          fg.lighten(45%),
-          angle: 45deg,
-        )
-        .sharp(2)
-        .repeat(3)
-      )
       let upper-left = (column - 0.5 + column-spacing, start)
       let lower-right = (column + 0.5 - column-spacing, end)
       rect(
