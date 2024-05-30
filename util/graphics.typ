@@ -63,8 +63,6 @@
     label(diagram.width)
   }
 
-  // TODO: also add legend explaining backdrops of epochs
-
   // this is like super cursed
   // but on the other hand this way I don't need to worry about scaling
   // and can easily draw squares
@@ -158,7 +156,6 @@
     }
   }
 
-  // TODO: refactor syntax to make use of intervals always sharing starts and ends,
   // just put them into 1 array instead of nesting
   epoch(1, (1715, 1789), "aufklärung")[Aufklärung]
   epoch(2, (
