@@ -125,7 +125,11 @@
   // TODO: refactor syntax to make use of intervals always sharing starts and ends,
   // just put them into 1 array instead of nesting
   epoch(1, (1715, 1789))[Aufklärung]
-  epoch(2, (1760, 1780))[Sturm und Drang]
+  epoch(2, (
+    1760, "solid",
+    1780, "maybe",
+    1785,
+  ))[Sturm und Drang]
   epoch(3, (
     1770, "maybe",
     1785, "solid",
@@ -140,7 +144,11 @@
 
   epoch(1, (1815, 1848))[Vormärz]
   epoch(2, (1815, 1848))[Biedermeier]
-  epoch(3, (1848, 1890))[Poetischer Realismus]
+  epoch(3, (
+    1848, "solid",
+    1890, "maybe",
+    1895,
+  ))[Poetischer Realismus]
   epoch(4, (1880, 1900))[Natural-ismus]
   epoch(1, (1900, 1910))[
     GzN
