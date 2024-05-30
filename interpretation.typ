@@ -56,6 +56,7 @@
 
 #outline(
   fill: align(right, repeat[.]),
+  indent: auto,
 )
 
 = Ziel
@@ -69,6 +70,15 @@ Finde eine tiefere Bedeutung im Text.
   - Idealerweise gleich mit Stift in der Hand,
     um einzelne Sinnabschnitte zu finden und markieren.
 
++ Überlege dir eine initiale Hypothese
+  über eine mögliche Interpretation
+  des Textes,
+  welche du über deine Arbeit hinweg
+    bestätigen,
+    ablehnen oder
+    irgendetwas dazwischen damit machen
+  wirst.
+
 + Finde Elemente,
   mithilfe sich der Text
   zunächst oberflächlich beschreiben lässt.
@@ -80,18 +90,65 @@ Finde eine tiefere Bedeutung im Text.
       Motivationen
     der teilnehmenden Entitäten.
 
-  - 
+  - Falls Motive zu finden sind,
+    schreibe diese auf.
+    Vielleicht
+      korrelieren,
+      interagieren oder
+      entgegenstehen
+    diese auch.
 
-+ Lege dir einen Schreibplan/Gliederung zurecht.
++ Lege dir einen Schreibplan/eine Gliederung zurecht.
 
-  - Wie genau der aussehen soll,
+  - Die Skelettstruktur
+    für die meisten Fälle
+    ist ungefähr:
+    
+    + Einleitung
+      
+      - Basissatz
+      - Epochenbezug
+
+    + Hauptteil
+
+      #set enum(numbering: "a)")
+      + Initiale Hypothese
+      + Inhaltszusammenfassung
+      + Dialoganalyse (falls nötig)
+      + Sprachlich-stilistische Analyse
+      + ...
+      + Überprüfung der Hypothese
+      + Fazit
+
+    + Schluss
+
+      - Rückbezug auf Einleitung
+      - Bedeutung der Epoche oder Autor:in
+
+  - Das sollte man so weit ausfüllen,
+    dass man davon ausgehend
+    den eigentlichen Text schreiben kann,
+    ohne viel nachzudenken.
+
+  - Wie das aber genau aussehen soll,
     hängt von der Textart ab.
-  - Man kann auch von der kanonischen Gliederung für die jeweilige Textart abweichen.
-    Das sollte man aber nur mit gutem Grund machen.
 
-+ Führe diesen Schreibplan aus.
+    - Man kann auch von der kanonischen Gliederung für die jeweilige Textart abweichen.
+      Das sollte man aber nur mit gutem Grund machen.
 
-#todo[Nun ja, Schritt für Schritt Anleitung]
++ Führe diesen Schreibplan aus,
+  um den eigentlichen Text zu erhalten.
+
+  - Es ist okay,
+    wenn man während dem Schreiben des Textes neue Dinge herausfindet,
+    die nicht im Schreibplan standen,
+    oder doch etwas ganz anders ist.
+
+  - Meist bietet es sich an,
+    den Schreibplan entsprechend anzupassen,
+    damit sowohl Korrektor:in als auch du selber
+    den Überblick behalten.
+    Das ist aber nicht unbedingt nötig.
 
 = Wie?
 
@@ -139,7 +196,7 @@ finden.
 Das ist aber auch nicht universell:
 Kafka beispielsweise verwendet kaum Stilmittel,
 bei Gedichten sind die Stilmittel
-weitaus wichtiger als irgendwo anders,
+weitaus wichtiger als anderswo,
 und auch hier gibt es große Epochenunterschiede.
 
 == Interpretationsebenen
@@ -212,8 +269,11 @@ Textelemente erklären kann.
 
 = Anhang
 
-#pagebreak()
+== Stilmittel
 
+#todo[Die häufigsten Stilmittel auflisten]
+
+#pagebreak()
 == Epochen der Literatur
 
 #graphics.literature-epochs
