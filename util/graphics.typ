@@ -71,15 +71,14 @@
     anchor: "north-west",
     canvas({
       let part(y, accent, label) = {
-        let y = y * 1.25
         rect(
           (0, y),
-          (rel: (1, 1)),
+          (rel: (0.75, 0.75)),
           fill: accent,
           stroke: none,
         )
         content(
-          (1, y + 0.5),
+          (0.75, y + 0.75 / 2),
           anchor: "west",
           pad(0.5em, label),
         )
