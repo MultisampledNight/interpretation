@@ -55,27 +55,20 @@
   // TODO: also add legend explaining backdrops of epochs
 
   let normalize(intervals) = {
-    // is there only 1 interval?
-    if type(intervals.at(0)) == int {
-      intervals = (intervals,)
+    // if there's only 2 items, assume it's solid
+    if intervals.len() == 2 {
+      intervals.insert(1, "solid")
     }
 
     return intervals
-      .map(it =>
-        if type(it.at(1)) == int {
-          (it.at(0), "solid", it.at(1))
-        } else {
-          it
-        }
-      )
   }
 
-  // one interval is one of
-  // - an array of (start, end)
-  //   - `kind` defaults to "solid"
-  // - an array of (start, kind, end)
-  //
-  // `intervals` is an array of intervals or one interval
+  let individual(intervals) = {
+    range(int(intervals.len() / 2))
+      .map(i => intervals.slice(i * 2, count: 3))
+  }
+
+  // `intervals` is an array of the form (start, [kind,] {mid, kind}, end)
   //
   // `kind` is one of
   // - "maybe", denoting that it isn't entirely clear
@@ -85,11 +78,11 @@
   let epoch(column, intervals, name) = {
     let intervals = normalize(intervals)
 
-    let total-start = calc.min(..intervals.map(it => it.at(0)))
-    let total-end = calc.max(..intervals.map(it => it.at(2)))
+    let total-start = intervals.first()
+    let total-end = intervals.last()
     let y-mid = (total-start + total-end) / 2
 
-    for (start, kind, end) in intervals {
+    for (start, kind, end) in individual(intervals) {
       let backdrops = (
         "solid": fg.transparentize(17.5%),
         "maybe": gradient.linear(
@@ -134,13 +127,15 @@
   epoch(1, (1715, 1789))[Aufklärung]
   epoch(2, (1760, 1780))[Sturm und Drang]
   epoch(3, (
-    (1770, "maybe", 1785),
-    (1785, "solid", 1805),
-    (1805, "maybe", 1830),
+    1770, "maybe",
+    1785, "solid",
+    1805, "maybe",
+    1830,
   ))[Weimarer Klassik]
   epoch(4, (
-    (1805, "solid", 1830),
-    (1830, "maybe", 1850),
+    1805, "solid",
+    1830, "maybe",
+    1850,
   ))[Romantik]
 
   epoch(1, (1815, 1848))[Vormärz]
@@ -152,8 +147,9 @@
     #footnote[Gegenströmungen zum Naturalismus]
   ]
   epoch(2, (
-    (1911, "solid", 1933),
-    (1933, "maybe", 1940),
+    1911, "solid",
+    1933, "maybe",
+    1940,
   ))[Expression-ismus]
 
   epoch(3, (1945, 1955))[Trümmer #footnote[Trümmerliteratur]]
