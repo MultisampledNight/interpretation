@@ -64,12 +64,83 @@ Finde eine tiefere Bedeutung im Text.
 
 = Anleitung
 
++ Lese den Text ein paar mal durch.
+
+  - Idealerweise gleich mit Stift in der Hand,
+    um einzelne Sinnabschnitte zu finden und markieren.
+
++ Finde Elemente,
+  mithilfe sich der Text
+  zunächst oberflächlich beschreiben lässt.
+  
+  - Wenn ein Dialog vorhanden ist,
+    sammle
+      Argumentationspunkte,
+      Strategie und
+      Motivationen
+    der teilnehmenden Entitäten.
+
+  - 
+
++ Lege dir einen Schreibplan/Gliederung zurecht.
+
+  - Wie genau der aussehen soll,
+    hängt von der Textart ab.
+  - Man kann auch von der kanonischen Gliederung für die jeweilige Textart abweichen.
+    Das sollte man aber nur mit gutem Grund machen.
+
++ Führe diesen Schreibplan aus.
+
 #todo[Nun ja, Schritt für Schritt Anleitung]
 
 = Wie?
 
 Baue nach und nach Modelle auf,
 die bei der Abstraktion helfen.
+
+== Sinnabschnitte
+
+Texte behandeln oft mehrere
+  Szenen,
+  Situationen,
+  Perspektiven und
+  Geschehnisse.
+Dementsprechend lassen sich oft
+Abschnitte finden,
+wo die gerade genannten Elemente
+mehr oder weniger zusammenhängend sind.
+
+Diese Abschnitte werden Sinnabschnitte gemacht,
+weil sie den Text brillianterweise sinnmäßig unterteilen.
+Sie helfen sowohl
+  bei der Orientierung
+  für das Finden
+  von relevanten Textelementen,
+als auch
+  bei der Referenz
+  auf diese Textelemente
+  dann in der Interpretation.
+
+Effektiv sind diese
+nur eine Abstraktion
+über die reine Zeilenangabe
+(die man sowieso immer bei Zitaten machen sollte)
+hinweg,
+und erlauben
+eine gröbere Einordung
+des Textes.
+
+Pro Sinnabschnitt
+sollte man
+  mindestens ein Stilmittel
+und
+  eine Überschrift für den gesamten Abschnitt
+finden.
+Das ist aber auch nicht universell:
+Kafka beispielsweise verwendet kaum Stilmittel,
+bei Gedichten sind die Stilmittel
+weitaus wichtiger als irgendwo anders,
+und auch hier gibt es große Epochenunterschiede.
 
 == Interpretationsebenen
 
@@ -110,6 +181,7 @@ die Referenz auf vorherige Ebenen an.
 
 Eine Epoche ist
 eine zeitlich begrenzte Strömung
+(aber trotzdem selten genau einordbare)
 von ähnlichen Ideen
 mit meist ähnlichem Stil.
 
@@ -125,7 +197,7 @@ aber die Art,
 wie Kafka schreibt,
 ist eigentlich eher dem Realismus zuzuordnen.
 
-Ob man speziell die Epoche zuordnen muss
+Ob man speziell die Epoche zuordnen muss,
 sollte man zuvor
 mit der Lehrkraft absprechen.
 Wenn man das muss,
