@@ -7,7 +7,7 @@
 		rel="cc:attributionURL"
 		href="https://gitlab.com/MultisampledNight/about-boundaries-and-self"
 	>
-		About boundaries and self
+		hilfe Interpretation wie
 	</a>
 		by
 	<a
