@@ -8,9 +8,8 @@ als es bei mir gedauert hat.
 
 ## Hilfe ich will nur ein PDF
 
-Einfach den höchsten Eintrag mit einem Checkmark davor anklicken,
-dort unter `Artifacts` auf `interpretation` mit dem Paketsymbol klicken:
-https://github.com/MultisampledNight/interpretation/actions/workflows/compile-docs.yaml
+Einfach unter dem letzten Release unter `Assets` auf `interpretation.pdf` klicken:
+https://github.com/MultisampledNight/interpretation/releases/latest
 
 ## Mithelfen
 
