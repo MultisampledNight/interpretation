@@ -74,3 +74,5 @@ wenn es ihnen in Deutsch aktuell nicht zu gut geht,
 aber auch gleichzeitig ein kondensiertes Nachschlagewerk bilden.
 
 # Lizenz
+
+CC BY-NC-SA 4.0. Siehe [LICENSE.md](./LICENSE.md).
