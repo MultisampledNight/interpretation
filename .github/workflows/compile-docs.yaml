@@ -52,7 +52,7 @@ jobs:
       - name: Compile all typst documents
         run: |
           export PATH="$PATH:$(pwd)"
-          ./docs/compile-all \
+          ./compile-all \
             --font-path ibm-plex/IBM-Plex-Mono \
             --font-path ibm-plex/IBM-Plex-Sans \
       - uses: actions/upload-artifact@v4
