@@ -6,6 +6,12 @@ also gebe ich es an andere Entitäten weiter.
 Damit diese hoffentlich schneller in Deutsch besser werden,
 als es bei mir gedauert hat.
 
+## Hilfe ich will nur ein PDF
+
+Einfach den höchsten Eintrag mit einem Checkmark davor anklicken,
+dort unter `Artifacts` auf `interpretation` mit dem Paketsymbol klicken:
+https://github.com/MultisampledNight/interpretation/actions/workflows/compile-docs.yaml
+
 ## Mithelfen
 
 Hängt davon ab, was genau verbessert werden möchte!
@@ -67,3 +73,4 @@ dass man frustrierten Schüler:innen in die Hände drücken kann,
 wenn es ihnen in Deutsch aktuell nicht zu gut geht,
 aber auch gleichzeitig ein kondensiertes Nachschlagewerk bilden.
 
+# Lizenz
