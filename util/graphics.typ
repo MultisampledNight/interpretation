@@ -197,6 +197,7 @@
   set-style(stroke: (
     thickness: 2pt,
     join: "round",
+    cap: "round",
   ))
 
   let vert(y) = (rel: (0, y))
