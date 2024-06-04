@@ -1,6 +1,6 @@
 #import "util/graphics.typ"
 
-#let version = "0.1.0"
+#let version = "0.1.1"
 
 #set page(
   numbering: "1 / 1",
