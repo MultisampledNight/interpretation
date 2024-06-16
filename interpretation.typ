@@ -167,7 +167,7 @@ Abschnitte finden,
 wo die gerade genannten Elemente
 mehr oder weniger zusammenhängend sind.
 
-Diese Abschnitte werden Sinnabschnitte gemacht,
+Diese Abschnitte werden Sinnabschnitte genannt,
 weil sie den Text brillianterweise sinnmäßig unterteilen.
 Sie helfen sowohl
   bei der Orientierung
